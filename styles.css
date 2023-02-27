@@ -1,0 +1,69 @@
+h1 {
+  text-align: center;
+  align-items: center;
+}
+
+.testlive-text {
+  display: inline;
+  color: burlywood;
+}
+
+/* Dropdown CSS */
+.dropdown {
+  cursor: pointer;
+  position: relative;
+}
+
+.dropdown > span {
+  color: var(--blue-3);
+  transition: all ease .2s;
+}
+
+.dropdown .dropdown__list {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 19px;
+  z-index: 4;
+  width: 100%;
+  text-align: left;
+}
+
+.dropdown:hover > .dropdown__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown > span > svg {
+  vertical-align: middle;
+  margin-top: -2px;
+}
+
+.dropdown > span > svg path {
+  fill: var(--blue-2);
+}
+
+.dropdown:hover > span > svg path {
+  fill: var(--blue-3);
+}
+
+.dropdown__list {
+  padding-top: 1.5rem;
+  min-width: 150px;
+}
+
+.dropdown__list > * {
+  padding: 0.75rem 0.9rem;
+  background-color: var(--dark-blue-1);
+  transition: all ease .2s;
+}
+
+.dropdown__list > a:hover {
+  color: var(--blue-4);
+  background-color: var(--dark-blue-2);
+}
+
+.dropdown__list > a:active {
+  background-color: var(--grey-2);
+  color: var(--dark-blue-1);
+}
